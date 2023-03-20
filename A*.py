@@ -70,7 +70,7 @@ def backtrack_path(parents, start_node, goal_node, animation):  ## defining in t
     height, _, _ = animation.shape                                                                   
     path, current_node = [goal_node], goal_node   ## current node gets to goal node and is fixed
     while current_node != start_node:
-        path.append(current_node)       ### the path is taken care of by continuosly appending the current node to the path
+        path.append(current_node)       ### the path taken care of by continuosly appending the current node to the path
         current_node = parents[current_node]
         
         cv2.arrowedLine(animation, (int(current_node[0]), int(height - 1 - current_node[1])), (int(path[-1][0]), int(height - 1 - path[-1][1])), (0, 0, 255), 1)
