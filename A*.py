@@ -55,7 +55,7 @@ for i in range(plot_height):    ### going through every row that is the height
             if eqn(j, i):            ### if it happens go through each equation and print it black
                 pixels[i, j] = [0, 0, 0]  
                 break    ## break the cycle
-            elif eqn(j, i-clearance) or eqn(j, i+clearance) or eqn(j-clearance, i) or eqn(j+clearance, i): ####if the user input is within the clearance ditance of the equation then paint it black
+            elif eqn(j, i-clearance) or eqn(j, i+clearance) or eqn(j-clearance, i) or eqn(j+clearance, i): ####if the user input is within the clearance ditance of  equation then paint it black
                 pixels[i, j] = [192, 192, 192]  
 
 def is_valid_node(node):                                                    ### x nad y should be within the plot area
