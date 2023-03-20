@@ -1,7 +1,7 @@
 import numpy as np
 import time
 import cv2
-import math                              #### import libraries which are necessary
+import math                              #### import libraries that are necessary
 from queue import PriorityQueue
 
 
